@@ -1,0 +1,39 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "Debug",
+			"command": "C:\\dev\\mingw\\bin\\g++.exe",
+			"args": [
+				"-g",
+				"${workspaceFolder}\\src\\*.cpp",
+				"-o",
+				"${workspaceFolder}\\build\\debug\\${fileBasenameNoExtension}.exe",
+				"-I",
+				"${workspaceFolder}\\include",
+				"-I",
+				"C:\\dev\\wxWidgets-3.1.3\\include",
+				"-I",
+				"C:\\dev\\wxWidgets-3.1.3\\lib\\gcc_dll\\mswud",
+				"-L",
+				"C:\\dev\\wxWidgets-3.1.3\\lib\\gcc_dll",
+				"-l",
+				"wxmsw31ud_core",
+				"-l",
+				"wxbase31ud",
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "編譯器: C:\\dev\\mingw\\bin\\g++.exe"
+		}
+	]
+}
